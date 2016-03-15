@@ -1,0 +1,29 @@
+
+body {
+    padding-top: 70px;
+}
+
+.row {
+    height:200%;
+}
+
+#header
+{
+    color:#000;
+    margin-bottom:50px;
+}
+
+#blockly
+{
+	border:1px solid #CCC;
+	padding-left:0;
+	height:300px;
+    width:200%  ;
+}
+
+#blockly_editor
+{
+	width:49%;
+    height:200%;
+	float:left;
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Preference Selection</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+
+    <script type="text/javascript">
+		window.blockly_loaded = function(blockly) {
+			return window.Blockly = blockly;
+		}
+		window.run_code = function() {
+			code = window.Blockly.JavaScript.workspaceToCode();
+			eval(code);
+		}
+	</script>
+
+</head>
+<body>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <h1 id="header">Code your preferences up</h1>
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="col-md-8">
+                <div id="blockly_editor">
+            		<iframe id="blockly" src="blockly.html"  ></iframe>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae. Sed dui lorem, adipiscing in adipiscing et, interdum nec metus. Mauris ultricies, justo eu convallis placerat, felis enim.</p>
+                <p id="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae. Sed dui lorem, adipiscing in adipiscing et, interdum nec metus. Mauris ultricies, justo eu convallis placerat, felis enim.</p>
+                <button id="button_run" class="btn btn-default" onclick="run_code()">
+            		Run Code Block
+            	</button>
+            </div>
+        </div>
+
+        <hr>
+
+    </div>
+
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
